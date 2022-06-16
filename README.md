@@ -3,9 +3,9 @@ Deploy a high-availability web app using CloudFormation" project. Your company i
 The task is to deploy the application, along with the necessary supporting software into its matching infrastructure. This needs to be done in an automated way so that the infrastructure can be discarded as soon as the testing team finishes their tests and gathers their results.
 
 ### Deployments
-Network deployment: ./stack-create.sh udagramStack networks.yaml network-parameters.json
+Network deployment: ./stack-create.sh udagram-network networks.yaml network-parameters.json
 
-Server deployment: ./stack-create.sh udagramServer servers.yaml server-parameters.json
+Server deployment: ./stack-create.sh udagram-server servers.yaml server-parameters.json
 
 LB URL: udagr-WebAp-GHGODRE9M4BX-1361675143.us-east-1.elb.amazonaws.com
 
