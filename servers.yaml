@@ -87,7 +87,7 @@ Resources:
           systemctl start apache2.service
           cd /var/www/html
           echo "Udacity Demo Web Server Up and Running!" > index.html 
-      ImageId: !Ref AmitoUse
+      ImageId: "ami-0729e439b6769d6ab"
       SecurityGroups:
         - !Ref WebServerSecGroup
       InstanceType: t3.small
