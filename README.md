@@ -2,6 +2,13 @@
 Deploy a high-availability web app using CloudFormation" project. Your company is creating an Instagram clone called Udagram. Developers pushed the latest version of their code in a zip file located in a public S3 Bucket. 
 The task is to deploy the application, along with the necessary supporting software into its matching infrastructure. This needs to be done in an automated way so that the infrastructure can be discarded as soon as the testing team finishes their tests and gathers their results.
 
+### Deployments
+Network deployment: ./stack-create.sh udagramStack networks.yaml network-parameters.json
+
+Server deployment: ./stack-create.sh udagramServer servers.yaml server-parameters.json
+
+LB URL: udagr-WebAp-2XJT25ZEWHZN-665943462.us-east-1.elb.amazonaws.com
+
 ### Server specs
 You'll need to create a Launch Configuration for your application servers in order to deploy four servers, two located in each of your private subnets. The launch configuration will be used by an auto-scaling group.
 
@@ -31,6 +38,4 @@ Log information for UserData scripts is located in this file: cloud-init-output.
 
 You should be able to destroy the entire infrastructure and build it back up without any manual steps required, other than running the CloudFormation script.
 
-The provided UserData script should help you install all the required dependencies. Bear in mind that this process takes several minutes to complete. Also, the application takes a few seconds to load. This information is crucial for the settings of your load balancer health check.
-
-
+The provided UserData script should help you install all the required dependencies. Bear in mind that this process takes several minutes to complete. Also, the application takes a few seconds to load. This information is crucial for the settings of your load balancer health check
