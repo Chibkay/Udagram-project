@@ -7,7 +7,6 @@ Network deployment: ./stack-create.sh udagram-network networks.yaml network-para
 
 Server deployment: ./stack-create.sh udagram-server servers.yaml server-parameters.json
 
-LB URL: udagr-WebAp-GHGODRE9M4BX-1361675143.us-east-1.elb.amazonaws.com
 
 ### Server specs
 You'll need to create a Launch Configuration for your application servers in order to deploy four servers, two located in each of your private subnets. The launch configuration will be used by an auto-scaling group.
