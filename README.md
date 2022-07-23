@@ -22,9 +22,7 @@ The load balancer should allow all public traffic (0.0.0.0/0) on port 80 inbound
 
 The application needs to be deployed into private subnets with a Load Balancer located in a public subnet.
 
-One of the output exports of the CloudFormation script should be the public URL of the LoadBalancer.
 
-Bonus points if you add http:// in front of the load balancer DNS Name in the output, for convenience.
 
 ### Other Considerations
 You can deploy your servers with an SSH Key into Public subnets while you are creating the script. This helps with troubleshooting. Once done, move them to your private subnets and remove the SSH Key from your Launch Configuration.
